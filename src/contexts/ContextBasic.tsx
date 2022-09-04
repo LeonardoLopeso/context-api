@@ -14,12 +14,12 @@ const initialState = {
     age: 90
 }
 
-export const Context = createContext<ContextType>(initialState);
+export const ContextBasic = createContext<ContextType>(initialState);
 
 export const ContextProvider = ({ children }: IReactFC) => {
     return (
-        <Context.Provider value={initialState}>
+        <ContextBasic.Provider value={initialState}>
             {children}
-        </Context.Provider>
+        </ContextBasic.Provider>
     )
 }

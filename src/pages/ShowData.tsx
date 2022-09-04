@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 
-import { Context } from '../contexts/Context';
+// import { ContextBasic } from '../contexts/ContextBasic';
+import { ContextProfissional } from '../contexts/ContextProfissional';
 
 export const ShowData = () => {
-    const { name } = useContext(Context);
+    const { state, dispatch } = useContext(ContextProfissional);
 
     return (
         <div>
-            Tela ShowData de {name}
+            Tela ShowData de {state.user.name}
             <br />
             <Link to="/">Ir para SignUp</Link>
         </div>

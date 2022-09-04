@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { SignUp } from "./pages/SignUp";
 import { ShowData } from "./pages/ShowData";
 
-import { ContextProvider } from './contexts/Context';
+// import { ContextProvider } from './contexts/ContextBasic';
+import { ContextProvider } from './contexts/ContextProfissional';
 
 const App = () => {
   return (
