@@ -10,7 +10,7 @@ interface IReactFC {
 }
 
 const initialState = {
-    name: 'Leonardo',
+    name: 'João',
     age: 90
 }
 
